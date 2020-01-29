@@ -1,0 +1,76 @@
+extends layout.pug
+
+block content
+  .content.cme-group
+    link(rel='stylesheet', href='/css/case-study.css')
+    h1 CME Group Intelligent Order Injector Software
+    .tag Back-End Dev
+    .colored-divider
+    p.description The Multidisciplinary Design Program at U-M’s College of Engineering is a selective, year-long program that connects groups of students of different majors and skill-levels with professional design projects. My team worked to develop an order injector tool that would deliver increased performance testing efficiency for developers at CME Group.
+    img(src="images/cme-group-header.png")
+
+    .spec-section
+      .timeline
+        p.title Timeline
+        p September 2019 - December 2019
+      .tools
+        p.title Tools
+        p Figma, Sketch
+      .team-members
+        p.title Team Members
+        p Kush Goliya
+        p Aneeqa Fatima
+        p Ed Wijaya
+        p Preet Patel
+
+  .content.cme-group
+    h2 So you CODE code?
+    p Well, not anymore. At least not much. But I include this project in my portfolio because my experience working as a developer gave me such valuable insight into the day-to-day happenings of how the products I design for now are actually built. I gained empathy for developers and how they build software, which helps me create clearer and more understandable design specifications.
+    
+    h2 What’s CME Group?
+    p CME Group is a financial company that operates the world’s largest options and futures exchange where traders such as banks, prop trading firms, hedge funds, and brokers (on behalf of individual investors) virtually buy and sell financial derivatives. These trading interactions between financial market participants are carried out on CME Group’s Globex Trading Platform, which uses a matching engine at its core to match orders from buyers and sellers in real time.
+    
+    h2 Stakeholder objectives & engineering requirements.
+    p CME Group provided our team with a project brief that clearly articulated the problem we we would solve over the course of the year.
+    p Problem Statement: CME Group needs a tool that will demonstrate how changes their developers make to their Matching Engine software affects financial trading behavior, because  their current testing system is not dynamic or flexible enough to do so.
+    p Before ever writing a line of code, we spent multiple weeks working to break down our project into more granular stakeholder requirements.
+
+    h3 Technical Stakeholder Requirements
+    h4 Market Data Reader
+    p Our system must be able to listen to CME Group’s Market Data Platform, parse its messages, and store it in appropriate data structures, such as an order book.
+    h4 iLink
+    p Our system must have a channel for pre-defined trading strategies to create and send orders to CME Group’s Globex platform.
+    h4 Performance Analysis
+    p Our system must perform well enough to be able to process incoming information and make a trading decision within 10 microseconds.
+    h4 User Interface
+    p Our system must have a simple, terminal-based user interface that CME Group developers can use for testing and manually sending orders to CME’s Globex platform.
+    h4 API
+    p Our system must have an API that each algorithm can use to collect market data, find out its inventories and monies, and send orders to CME’s trading platform.
+    h4 Trading Strategies
+    p Our system must use multiple trading strategies to test the injector with CME’s platform.
+    h4 News Generator
+    p Our system must have a mechanism that listens to and parses through news that could affect trading decisions.
+    
+    h2 The final design solution.
+    p Our project, written in Java, employs user-designed trading strategies to make smart trading decisions about which orders to submit to the Globex Electronic Trading Platform. This simulates how changes or additions to the trading platform affect the behavior of different market participants. The simulation is supplemented with clear metrics that help CME developers gauge the magnitude of the resulting changes in behavior.
+    p We designed our software to be easily maintainable and scalable. At the end of our project, we handed everything off. That hand-off includedwe thorough documentation about our application that included detailed descriptions of the code, how it should be used, and ideas for developing it further.
+    h3 Project Architecture
+    img#cme-arch(src="images/cme-general-arch.png" style="margin-top: 50px; width: 70%;")
+    p Our system needed to seamlessly integrate with CME Group’s existing software while reading and parsing publicly available financial market data. We designed our system to be comprised of any number of individual “injectors.” Each injector had its own trading strategy that dictated the trading decisions it would make and how frequently to place orders.
+    h3 Design Solution Diagram
+    p We designed our system to be loosely-coupled, meaning that the different system components are linked but not dependent on each other. This allows CME Group’s developers to fix any bugs that appear without a complete reassessment of the entire system.
+    img(src="images/cme-arch.png" style="margin-top: 60px; margin-bottom: 20px; width: 90%;")
+    h2 Validating our success.
+    p We were able to deploy five order injectors and test their performance, parallelism, and accuracy. The order injectors were able to process each market data message in seven microseconds. They were also able to run different trading strategies without negatively impacting the performance of the other order injectors running in parallel.
+    h3 Results Figures
+    h4 Service Time of Market Data Router
+    img(src="images/mdr.png" style="margin-top: 30px; margin-bottom: 30px; width: 70%;")
+    h4 Service Time of Order Book
+    img(src="images/order-book.png" style="margin-top: 30px; margin-bottom: 30px; width: 70%;")
+    h4 Service Time of Volume Tracker
+    img(src="images/volume-tracker.png" style="margin-top: 30px; margin-bottom: 30px; width: 70%;")
+
+    h2 Final recommendations for implementation and use.
+    p By the end of the year, our team had developed all of the essential project components that met our client’s technical requirements and stakeholder objectives. 
+    p After verifying that our project functioned correctly in CME Group’s secure development environment, we were able to recommend that CME Group immediately deploy our software using our provided documentation without the need for any additional modifications.
+

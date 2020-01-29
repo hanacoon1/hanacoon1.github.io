@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="176px" height="24px" viewBox="0 0 176 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 61 (89581) - https://sketch.com -->
+    <title>Group 7</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <text id="text-1" font-family="Lato-Regular, Lato" font-size="24" font-weight="normal" letter-spacing="1.75609756" fill="#000000">
+            <tspan x="9" y="24">HANA COON</tspan>
+        </text>
+        <filter x="-2.8%" y="-15.5%" width="105.5%" height="131.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.233664773 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home-Desktop-Copy-2" transform="translate(-227.000000, -90.000000)">
+            <g id="Group-7" transform="translate(227.000000, 87.000000)">
+                <rect id="Rectangle" fill="#C6E8FF" fill-rule="nonzero" x="0" y="12.5" width="176" height="6"></rect>
+                <g id="Hana-Coon" fill="#000000" fill-opacity="1">
+                    <use filter="url(#filter-2)" xlink:href="#text-1"></use>
+                    <use xlink:href="#text-1"></use>
+                </g>
+                <rect id="Rectangle" fill="#C6E8FF" fill-rule="nonzero" x="108" y="12.5" width="9" height="6"></rect>
+                <rect id="Rectangle-Copy-4" fill="#C6E8FF" fill-rule="nonzero" x="129" y="12.5" width="9" height="6"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

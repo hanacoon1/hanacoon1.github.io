@@ -1,0 +1,11 @@
+extends layout.pug
+
+block content
+  .content
+    h1 Say Hi
+    form
+      input(type='text' placeholder='Name')
+      input(type='email' placeholder='Email address')
+      input(type='text' placeholder='Subject')
+      textarea#input-message(name='message' type='text' placeholder='Message')
+      input#input-submit(type='submit' value='Submit')
